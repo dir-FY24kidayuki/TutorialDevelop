@@ -3,19 +3,34 @@
 <head>
     <meta charset="utf-8">
     <title>Tutorial of Develop</title>
+    <link rel="stylesheet" th:href="@{/css/reset.css}">
     <link rel="stylesheet" th:href="@{/css/user/list.css}">
 </head>
 <body>
-    <h1>User情報管理システム</h1>
-    <h2>User一覧（全件）</h2>
+    <div class="list-header">
+        <h1>ユーザー情報管理システム</h1>
+    </div>
+    
+    <div class="list-title">
+        <h2>ユーザー一覧</h2>
+    </div>
+    
     
     <form method="post" th:action="@{/logout}">
-        <input type="submit" value="ログアウト">
+        <input type="submit" value="ログアウト" class="submit-btn">
     </form><br>
     
     <form name="frm" method="post" th:action="@{/user/list}">
-        <a th:href="@{/user/register}">Userの登録</a>
-        <input type="submit" name="deleteRun" id="deleteRun" value="（選択）したUserを一括削除">    
+    
+        <div>
+            <div>
+                <a th:href="@{/user/register}">Userの登録</a>
+            </div>
+            <div>
+                <input type="submit" name="deleteRun" id="deleteRun" value="（選択）したUserを一括削除">
+            </div>
+        </div>
+            
         <table>
             <tr>
                 <th class="center">(選択)</th>

@@ -1,10 +1,54 @@
 @charset "UTF-8";
 
 table {
-	border-collapse: collapse;
+	border-collapse: separeta;
+	border-spacing: 5px;
+	width: 80%;
+	margin: 0 auto;
 }
 
-th, td {
-	border: solid 1px black;
-	padding: 10px 20px;
+table th,table td{
+	border-radius: 5px;
+	text-align: center;
+	padding: 10px 0;
+}
+
+table th{
+  color: #6d8e6b;
+  border: none;
+  margin: 0px 5px;
+  font-size: 18px;
+  font-weight: 900;
+}
+
+table td{
+  border-top: solid 1px #6d8e6b;
+  color: #555;
+}
+
+.list-header {
+    height: 50px;
+    background-color: #6d8e6b;
+    padding-left: 3%;
+}
+
+.list-header h1 {
+    color: #fff;
+    font-size: 24px;
+    line-height: 50px;
+}
+
+/* ボタンの装飾 */
+.submit-btn {
+    padding: 5px 30px;
+    margin-top: 30px;
+    border: 1px solid #d0dcb2;
+    border-radius: 20px;
+    background-color: #6d8e6b;
+    color: #d0dcb2;
+}
+
+.submit-btn:hover {
+    background-color: #d0dcb2;
+    color: #6d8e6b;
 }
